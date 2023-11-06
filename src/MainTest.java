@@ -13,11 +13,13 @@ class MainTest {
     }
 
     @org.junit.jupiter.api.Test
-    void notDivisible() {
-        assertTrue(Main.notDivisibleBy235(5) == 1);
-        assertTrue(Main.notDivisibleBy235(10) == 2);
-        assertTrue(Main.notDivisibleBy235(100) == 26);
-        assertTrue(Main.notDivisibleBy235(1000) == 266);
+    private void assertEquals(boolean b) {
+
+        assertEquals(Main.notDivisibleBy235(5) == 1);
+        assertEquals(Main.notDivisibleBy235(10) == 2);
+        assertEquals(Main.notDivisibleBy235(100) == 26);
+        assertEquals(Main.notDivisibleBy235(1000) == 266);
+
     }
 
     @org.junit.jupiter.api.Test
